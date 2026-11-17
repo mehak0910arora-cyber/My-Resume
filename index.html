@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f3f0;
+            color: #252525;
+            line-height: 1.6;
+        }
+        /* navigation bar */
+        header {
+            background-color: #191919;
+            color: white;
+            padding: 1rem 8%;
+            top: 20px 8%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h2 {
+            letter-spacing: 2px;
+        }
+        nav a:hover {
+            color: #c58b8b;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        nav a {
+            color:#c58b8b;
+        }
+           
+        nav a:hover {
+            color: whitesmoke;
+        }
+        /* Home section */
+        #home {
+            background-color: #191919;
+            color: white;
+            padding: 100px 20px;
+            min-height: 400px;
+        }
+        #home h3{
+            color: #c58b8b;
+            margin-bottom: 15px;
+        }
+        #home h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        #home p {
+            color: #cccccc;
+            max-width: 550px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #c58b8b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Common section styles */
+        section {
+            padding: 60px 20px;
+        }
+        section h2 {
+            border-bottom: 2px solid #c58b8b;
+            margin-bottom: 25px;
+            font-size: 28px;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        /* About section */
+        #about p {
+            max-width: 750px;
+        }
+        /* Education Experience */
+        .card {
+            background-color: white;
+            padding: 22px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #00000010;
+        }
+        .card h3 {
+            margin-bottom: 5px;
+            color: #8e5555;
+        }
+        .card p {
+            color: #555555;
+        }
+        /* Skills section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skills span {
+            background-color: #e8dddd;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+        /* Contact section */
+        #contact {
+            background-color: #eae5e1;
+        }
+        #contact a {
+            color: #8e5555;
+        }
+        /* Photo */
+        .profile-section {
+             display: flex;
+             align-items: center;
+             gap: 15px;
+             background-color: #191919 ;
+             width: 100%;
+             padding: 10px 0;
+             box-sizing: border-box;
+            }
+            .profile-photo {
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                flex-shrink: 0;
+                background-color: #191919;
+                border: none;
+            }
+            .profile-section h1 {
+                color: white;
+                background: transparent;
+                margin: 0;
+            }
+        /* Footer */
+        footer {
+            background-color: #191919;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 5px;
+                font-size: 12px;
+            }
+            #home h1 {
+                font-size: 35px;
+            }
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <h2>Mehak Arora</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Home Section -->
+     
+
+    <section id="home">
+        <div>
+            <span>
+        <img src="C:\Users\user\Downloads\mehak photo.png" alt="Mehak" class="profile-photo">
+            </span>
+        </div>
+        <h3 >BBA STUDENT | ASPIRING PROFESSIONAL</h3>
+        <h1>Hello, I am Mehak</h1>
+        <p>
+            A business student interested in leadership, event management, web development, communication and human behavior. Always looking forward to learn new things and upskill myself. 
+        </p>
+        <a href="#about" class="btn">Explore My profile</a>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm someone who is constantly curious about people, ideas, and the reasons behind the way things are. I enjoy exploring different perspectives, questioning conventional thinking, and engaging in conversations that challenge the way we see the world. <br>
+
+My interests lie at the intersection of human behavior, leadership, business, and social issues. I value meaningful discussions, independent thinking, and the courage to stand by what I believe in, even when it means looking at things differently. <br>
+
+As a business student, I see learning as more than something that happens in a classroom. I believe in learning through experiences, taking initiative, working with people, and turning ideas into meaningful action.<br>
+
+I'm still discovering the directions I want to take, but I know I want to contribute to things that encourage people to think, question, and see beyond the obvious.
+        </p>
+    </section>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Bachelor of Business Administration (BBA)</h3>
+            <p>Vivekananda Institute of Professional Studies- TC | 2025 - Present</p>
+        </div> 
+            <div class="card">
+            <h3>Digital Business and Entrepreneurship  (DBE)</h3>
+            <p>Indian Institute of Management Bangalore (IIMB) | 2026(August) - Present</p>
+        </div>
+        <div class="card">
+            <h3>Schooling </h3>
+            <p>Kulachi Hansraj Model School | 2012 - 2024</p>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <span>Leadership</span>
+            <span>Event Management</span>
+            <span>Web Development</span>
+            <span>Communication</span>
+            <span>Human Behavior</span>
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+        </div>
+    </section>
+    <!-- Certifications --> 
+     <section id="certifications">
+    <h2>Certifications & Achievements</h2>
+
+ <div class="card">
+        <h3>Certified Young AI Explorer</h3>
+        <p>Times of India – AI Summer Camp</p>
+        <p>Solving Real-World Problems with AI Thinking</p>
+        <p>June 2025</p>
+    </div>
+
+    <div class="card">
+        <h3>People Management Assessment</h3>
+        <p>LearnTube.ai</p>
+        <p>March 25, 2026</p>
+    </div>
+
+    <div class="card">
+        <h3>Microsoft Excel Using AI Workshop</h3>
+        <p>OfficeMaster</p>
+        <p>March 29, 2026</p>
+    </div>
+
+    <div class="card">
+        <h3>Investment Products & Wealth Management</h3>
+        <p>Upskilling and Value Added Course | School of Business Studies, VIPS-TC</p>
+        <p>In association with Centre for Investment Education & Learning and FinX</p>
+        <p>Academic Year 2025–26</p>
+    </div>
+
+    <div class="card">
+        <h3>Event Management – INITIO'25</h3>
+        <p>Certificate of Appreciation for serving as a Team Member in Event Management</p>
+        <p>Annual Management Fest, Vivekananda School of Business Studies</p>
+        <p>February 1 & 2, 2025</p>
+    </div>
+
+    <div class="card">
+        <h3>Research Paper Presentation</h3>
+        <p>Integrating Sustainable Development Goals into Undergraduate Management Education: A Qualitative Study</p>
+        <p>International Conference on Transforming Minds, Transforming Earth: Education and Climate Action for Sustainable Living</p>
+        <p>VIPS-TC | February 24–25, 2026</p>
+    </div>
+
+    <div class="card">
+        <h3>Organising Committee – Young Indians Delhi Youth Conclave 2026</h3>
+        <p>Certificate of Appreciation</p>
+        <p>Vivekananda Institute of Professional Studies-TC/p>
+    </div>
+
+    <div class="card">
+        <h3>Financial Literacy for Inclusive and Empowered Women</h3>
+        <p>Certificate of Appreciation – Team Lead</p>
+        <p>Certificate of Participation – Seminar</p>
+        <p>In collaboration with NorthCap University and Indian Council of Social Science Research (ICSSR)</p>
+        <p>September 29, 2026</p>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:arora.mehak0910@gmail.com">arora.mehak0910@gmail.com</a></p>
+        <p>
+            LinkedIn: <a href="https://www.linkedin.com/in/mehak-arora-818265369/" target="_blank">Mehak Arora</a>
+        </p>
+        <!--footer-->
+        <footer>
+            &copy; 2026 Mehak Arora. All rights reserved. | Designed by Mehak Arora.
+        </footer>
+    </section>
+</body>
+</html>
